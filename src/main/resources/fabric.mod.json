@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "alwaysday",
+  "version": "${version}",
+  "name": "Always Day",
+  "description": "Adds the alwaysDay gamerule from Minecraft: Bedrock Edition to Minecraft: Java Edition using the Fabric mod loader.",
+  "authors": [
+    "Allink"
+  ],
+  "contact": {
+    "homepage": "https://github.com/allinkdev/AlwaysDay",
+    "sources": "https://github.com/allinkdev/AlwaysDay.git",
+    "issues": "https://github.com/allinkdev/AlwaysDay/issues"
+  },
+  "license": "UNLICENSE",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.github.allinkdev.alwaysday.AlwaysDay"
+    ]
+  },
+  "mixins": [
+    "alwaysday.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.17",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  }
+}
